@@ -17,17 +17,14 @@ class ZookeeperRequires(Endpoint):
         """
         Get the list of the relation info for each unit.
 
-        Returns a list of dicts, where each dict contains the elasticsearch
-        cluster name, the host (address)
-        and the port (as a string), as well as
-        the relation ID and remote unit name that provided the site.
+        Returns a list of dicts, where each dict contains the zookeeper
+        host (address) and the port (as a string).
 
         For example::
             [
                 {
                     'host': '10.1.1.1',
                     'port': '80',
-                    'cluster_name': "elasticsearch"
                 },
             ]
         """
